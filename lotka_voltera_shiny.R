@@ -1,7 +1,8 @@
 #This is a script to run a basic lotka volterra model within a shiny app. 
 #To see the app, make sure it is run within Rstudio. 
+#You will also need to install the shiny package to get it to work. 
 
-
+library(shiny)
 library(deSolve)
 
 LotVmod <- function (Time, State, Pars) {
@@ -21,8 +22,6 @@ out <- as.data.frame(ode(func = LotVmod, y = State, parms = Pars, times = Time))
 matplot(out[,-1], type = "l", xlab = "time", ylab = "population")
 legend("topright", c("Cute bunnies", "Rabid foxes"), lty = c(1,2), col = c(1,2), box.lwd = 0)
 
-library(shiny)
-library(deSolve)
 
 # Define UI (user interface) for sliders and table / figure output----
 ui <- fluidPage(
