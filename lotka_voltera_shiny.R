@@ -1,3 +1,7 @@
+#This is a script to run a basic lotka volterra model within a shiny app. 
+#To see the app, make sure it is run within Rstudio. 
+
+
 library(deSolve)
 
 LotVmod <- function (Time, State, Pars) {
