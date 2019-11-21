@@ -11,3 +11,7 @@ Lotka-Voltera competition: lotka_voltera_competition_shiny.R
 
 Lokta-Voltera predator-prey: lotka_voltera_shiny.R
 
+For more about Shiny apps visit: 
+
+https://shiny.rstudio.com/tutorial/written-tutorial/lesson1/
+
